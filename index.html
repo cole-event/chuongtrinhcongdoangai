@@ -229,7 +229,7 @@
                                 Xem thông tin khóa học
                             </a>
                         </div>
-                     </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -591,6 +591,13 @@
                         <input type="text" name="nghe_nghiep" placeholder="Nghề nghiệp của bạn" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:bg-white focus:border-edu-blue focus:ring-2 focus:ring-blue-100 outline-none transition text-sm" required>
                     </div>
                     
+                    <!-- NEW FIELD ADDED HERE -->
+                    <div>
+                        <label class="block text-[10px] font-bold text-gray-500 uppercase mb-1.5 tracking-widest">Đặt câu hỏi cho diễn giả (Tùy chọn)</label>
+                        <textarea name="cau_hoi" placeholder="Bạn có thắc mắc gì không?" class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-gray-50 focus:bg-white focus:border-edu-blue focus:ring-2 focus:ring-blue-100 outline-none transition text-sm" rows="3"></textarea>
+                    </div>
+                    <!-- END NEW FIELD -->
+                    
                     <button type="submit" id="submitBtn" class="w-full bg-edu-blue text-white py-3.5 rounded-xl font-bold text-base btn-hover shadow-lg mt-2 uppercase tracking-wide active:scale-95 transition-transform">
                         Hoàn tất đăng ký
                     </button>
@@ -678,7 +685,7 @@
 
 
         // --- FORM & MODAL LOGIC ---
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaEnSzJ_R9h9jFG0jaZfz6X6k0aVQ4TA4MxTGd4CYBzzfaseEFI7G5h0RkbkjxFEd0ZQ/exec'; 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFF3Br8svSM9Y5Luh3dnsCraI2a8feRkkeoup_kdsxxt2OCCiqyFwT3bwLq_RumUS_Hg/exec'; 
         const modal = document.getElementById('regModal');
         const modalContent = document.getElementById('modalContent');
         const form = document.forms['google-sheet'];
@@ -794,6 +801,3 @@
     </script>
 </body>
 </html>
-
-
-
